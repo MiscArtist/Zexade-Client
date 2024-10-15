@@ -231,3 +231,40 @@ h1:hover {
         filter: blur(opx);
     }
 }
+
+.clientnav {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+}
+
+ul.clnav {
+  list-style: none;
+}
+
+ul.clnav li {
+  display: inline;
+  padding: 12px 3vh;
+}
+
+ul.clnav li a {
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  opacity: 0.5;
+  font-size: 1.3vw;
+  transition: opacity 0.5s, text-shadow 0.5s;
+}
+
+@media screen and (max-width: 600px) {
+  ul.clnav li a {
+    font-size: 2.5vw;
+  }
+}
+
+ul.clnav li a:hover {
+  opacity: 1;
+  text-shadow: 0px 4px 3px rgba(255,255,255,0.4),
+             0px 8px 13px rgba(255,255,255,0.1),
+             0px 18px 23px rgba(255,255,255,0.1);
+}
